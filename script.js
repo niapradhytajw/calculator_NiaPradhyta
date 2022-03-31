@@ -140,6 +140,28 @@ backspace.addEventListener('click', () => {
     updateScreen(currentNumber);
 });
 
+var number = document.getElementsByClassName("number");
+for(var i=0;i<number.length;i++){
+    number[i].addEventListener('click',function(){
+        var output=reverseNumberFormat(getOutput());
+        //if output is a number
+        if(output!=NaN){
+            output=output+this.id;
+            printOutput(output);
+            
+        }
+    });
+}
+
+let checkbox = document.querySelector('input[name=theme]');
+checkbox.addEventListener('change',function(){
+    if(this.checked){
+        document.documentElement.setAttribute('data-theme','dark');
+    }else{
+        document.documentElement.setAttribute('data-theme','light');
+    }
+})
+
 /*const audio = document
 .querySelector('audio');
 

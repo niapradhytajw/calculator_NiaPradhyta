@@ -41,15 +41,15 @@ button {
 
 body {
   background-color: var(--bg);
-  border-radius: 450px;
-  -webkit-border-radius: 450px;
-  -moz-border-radius: 450px;
-  -ms-border-radius: 450px;
-  -o-border-radius: 450px;
+  border-radius: 45px;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -o-border-radius: 45px;
 }
 
 .main {
-  width: 300px;
+  width: 298px;
   height: 560px;
   position: absolute;
   top: 50%;
@@ -130,6 +130,25 @@ body {
   color: var(--color-text);
 }
 
+.display #screen {
+  margin-bottom: .5em;
+  width: 238px;
+  height: 100px;
+  font-size: 35px;
+  outline: none;
+  border: none;
+  text-align: right;
+  padding-right: .60em;
+  background: #ecf0f3;
+  border-radius: 6px;
+  box-shadow: inset 8px 8px 8px #cbced1,                inset -8px -8px 8px #ffffff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+
 #keyboard {
   padding: 1.875rem 1.25rem;
 }
@@ -150,7 +169,7 @@ body {
 .group {
   width: 185px;
   float: left;
-  margin: 150px 0px;
+  margin: 50px 0px;
 
 }
 
